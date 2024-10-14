@@ -23,10 +23,11 @@ export class LoginComponent {
   }
 
   onLogin() {
+    debugger
     this.empService.login(this.loginObj).subscribe((res: APIResponse) => {
       if (res.result) {
         alert("Login Success");
-        localStorage.setItem('ticketData', JSON.stringify(res.data));
+        localStorage.setItem('ticketqData', JSON.stringify(res.data));
         this.router.navigateByUrl('/dashboard')
       } else {
         alert(res.message)
