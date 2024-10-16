@@ -1,1 +1,56 @@
-<p>layout works!</p>
+<div class="parent">
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a routerLink="/dashboard" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-home'></i> <!-- Icon for Dashboard -->
+                    </span>
+                    <span class="item-txt">
+                        Dashboard
+                    </span>
+                </a></li>
+              
+                <li><a routerLink="/employee" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-user-detail'></i> <!-- Icon for Employee -->
+                    </span>
+                    <span class="item-txt">
+                        Employee
+                    </span>
+                </a></li>
+              
+                <li><a routerLink="/department" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-building'></i> <!-- Icon for Department -->
+                    </span>
+                    <span class="item-txt">
+                        Department
+                    </span>
+                </a></li>
+              
+                <li><a routerLink="/tickets" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bx-task'></i> <!-- Icon for Tickets -->
+                    </span>
+                    <span class="item-txt">
+                        Tickets
+                    </span>
+                </a></li>
+              
+                <li><a routerLink="/new-tickets" class="nav-link">
+                    <span class="item-icon">
+                        <i class='bx bxs-plus-circle'></i> <!-- Icon for New-Tickets -->
+                    </span>
+                    <span class="item-txt">
+                        New-Tickets
+                    </span>
+                </a></li>
+              </ul>
+              
+        </div>
+        <div>
+            <router-outlet> </router-outlet>
+        </div>
+    </div>
+</div>

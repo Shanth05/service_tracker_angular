@@ -23,7 +23,6 @@ export class LoginComponent {
   }
 
   onLogin() {
-    debugger;
     this.empService.login(this.loginObj).subscribe((res: APIResponse) => {
       if (res.result) {
         alert("Login Success");
